@@ -1,0 +1,31 @@
+.pmain_content_description {
+    width: 600px;
+    margin: 12px 20px 0 20px;
+}
+
+.pmain_content_description_desc {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.pmain_content_description_loc {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px 0 12px;
+    color: #222;
+    font-size: 15px;
+    text-overflow: ellipsis;
+
+}
+
+.pmain_content_description_loc p {
+    border-bottom: 1px dotted #999;
+}
+
+.pmain_content_description_price {
+    font-size: 21px;
+    font-weight: 700;
+    color: #222;
+}

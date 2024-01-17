@@ -1,0 +1,35 @@
+.pmain_menu_recomendation_title{
+    font-size: 14px;
+        font-weight: bold;
+        color: #393939;
+        display: block;
+        padding: 0 0 6px 2px;
+        text-align: left;
+}
+.pmain_menu_recomendedAds{
+  display: flex;
+  flex-direction: column;
+}
+.pmain_menu_recomendationedAd{
+    display: flex;
+        margin: 10px 0 10px 2px;
+        font-size: 14px;
+}
+.pmain_menu_recomendationedAd_img>img{
+    width: 140px;
+        height: 105px;
+        border-radius: 8px;
+        object-fit: cover;
+}
+.pmain_menu_recomendationedAd_about{
+    display: flex;
+    flex-direction: column;
+   padding: 7px;
+    color: #222;
+}
+.pmain_menu_recomendationedAd_about_price{
+    font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin-top: 4px
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    margin: 70px auto;
+    position: absolute;
+    background-color: rgb(226, 225, 243);
+}
+
+.postSection {
+    width: 80%;
+    min-height: calc(100vh-70px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.postSection input {
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+hr{
+    width: 100%;
+    color: rgb(87, 86, 86);
+}
+
+.postBtn{
+    display: flex;
+}
+
+.postCarBtn{
+    width:200px;
+    height: 60px;
+    border-radius: 12px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .3s;
+    background-color: rgb(69, 68, 95);
+    color: #cdadda;
+}
+
+.postCarBtn:hover {
+    background-color: #d6d2d6;
+    color: rgb(85, 3, 85);
+}
+
+  
+.fileInputLabel {
+    position: relative;
+}
+
+.fileInput {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.fileIcon {
+    cursor: pointer;
+    font-size: 50px;
+    margin: 20px 0;
+}
