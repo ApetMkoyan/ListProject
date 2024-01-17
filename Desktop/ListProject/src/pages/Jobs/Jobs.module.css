@@ -1,0 +1,49 @@
+a{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px;
+    gap: 30px;
+}
+
+.main_a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    height: auto;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.jobs_holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.jobs{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    padding: 20px;
+    display: flex;
+    border-radius: 12px;
+}
+
+.jobs_item{
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ img{
+    width: 174px;
+    height: 165px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
