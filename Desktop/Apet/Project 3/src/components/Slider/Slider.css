@@ -1,0 +1,51 @@
+.slider {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+        border-radius: 8px 8px 0 0;
+}
+
+.image {
+    width: 640px;
+        height: 480px;
+   object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.right-arrow {
+        width: 32px;
+            height: 51px;
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #f6f6f6;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+        width: 32px;
+            height: 51px;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #f6f6f6;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+}

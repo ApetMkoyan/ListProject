@@ -1,0 +1,43 @@
+.pmain_crumb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+}
+
+.pmain_crumb_report {
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    align-items: center;
+    color: #666;
+    ;
+}
+
+.pmain_crumb_ {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 46px;
+
+}
+
+.pmain_crumb_ p {
+    height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pmain_crumb_ p:hover {
+    cursor: pointer;
+    color: #0c72ea;
+    ;
+}
+
+.pmain_crumb_report:hover {
+    color: #fe0000;
+    ;
+    cursor: pointer;
+}

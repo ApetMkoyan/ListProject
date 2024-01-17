@@ -1,0 +1,17 @@
+.pmain_menu_btns {
+    margin: 6px auto;
+    padding: 16px 0;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.pmain_menu_btns-btn {
+    font-size: 11px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    opacity: .5;
+}

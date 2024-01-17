@@ -1,0 +1,30 @@
+
+.main{
+    padding: 100px;
+}
+
+
+.MovingCars{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.MovingCars a{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.CarMovingLink::before{
+    margin-right: 5px;
+    content: ">";
+    color: rgb(102, 102, 102);
+}
+
+.MovingCars a:hover{
+    color: blue;
+}

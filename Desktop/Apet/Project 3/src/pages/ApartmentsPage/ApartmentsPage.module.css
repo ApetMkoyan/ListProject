@@ -1,0 +1,30 @@
+
+.main{
+    padding: 100px;
+}
+
+
+.MovingRealEstate{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.MovingRealEstate a{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.homeMovingLink::before{
+    margin-right: 5px;
+    content: ">";
+    color: rgb(102, 102, 102);
+}
+
+.MovingRealEstate a:hover{
+    color: blue;
+}

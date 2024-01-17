@@ -1,0 +1,7 @@
+.mainMenuitem_holder{
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 5px auto;
+    gap: 24px;
+}
