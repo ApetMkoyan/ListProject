@@ -5,7 +5,6 @@ const { get, post, put } = UseSendRequest();
 
 export const getUsersData = createAsyncThunk("userData/getUsersData", async () => {
   const result = await get(USERS_DATA_URL);
-
   return result;
 });
 

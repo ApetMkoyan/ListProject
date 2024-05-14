@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "../pages/Layout/Layout";
-
 import MainPage from "../components/MainPage/MainPage";
 import Jobs from "../pages/Jobs/Jobs";
 import PostApartment from "../pages/PostApartment/PostApartment"
