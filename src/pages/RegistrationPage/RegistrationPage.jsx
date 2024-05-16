@@ -1,15 +1,14 @@
+import React from "react";
 import { useDispatch } from "react-redux";
-import UseSendRequest from "../../hook/UseSendRequest";
 import RegistrationPageStyle from "./RegistrationPage.module.css";
 import { NavLink } from "react-router-dom";
 import { addNewUser } from "../../store/slices/UsersData/API";
 import { generateRandomID } from "../../hook/GenerateRandomId";
 
 const RegistrationPage = () => {
-  const { post } = UseSendRequest();
   const dispatch = useDispatch();
 
-  const handlerSubmit = async (e) => {
+  const handlerSubmit = (e) => {
     e.preventDefault();
     const {
       fullName: { value: fullName },
@@ -32,11 +31,14 @@ const RegistrationPage = () => {
     <div className={RegistrationPageStyle.mainRegisterPage}>
       <div className={RegistrationPageStyle.registrationPage}>
         <h1>Create an Account</h1>
-        <form onSubmit={handlerSubmit} className={RegistrationPageStyle.RegisterForm}>
+        <form
+          onSubmit={handlerSubmit}
+          className={RegistrationPageStyle.RegisterForm}
+        >
           <input type="text" placeholder="Full Name" name="fullName" />
           <input type="text" placeholder="Email" name="email" />
           <input type="text" placeholder="Phone" name="phone" />
-          <input type="text" placeholder="Password" name="password" />
+          <input type="password" placeholder="Password" name="password" />
           <button className={RegistrationPageStyle.registerBtn}>Submit</button>
         </form>
         <div>

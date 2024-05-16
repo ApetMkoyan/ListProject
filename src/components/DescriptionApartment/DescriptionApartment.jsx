@@ -1,4 +1,3 @@
-import { FaLocationDot } from "react-icons/fa6";
 import DescriptionApartmentStyle from "./DescriptionApartment.module.css"
 
 export const DescriptionApartment = ({ data }) => {
