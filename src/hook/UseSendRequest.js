@@ -3,13 +3,11 @@ import { json } from "react-router-dom";
 const UseSendRequest = () => {
   const get = async (url) => {
     const result = await fetch(url, {
-      mode: 'no-cors'
     });
     return result.json();
   };
   const post = async (url, data) => {
     const result = await fetch(url, {
-      mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,7 +20,6 @@ const UseSendRequest = () => {
 
   const put = async (url, data) => {
     const result = await fetch(url, {
-      mode: 'no-cors',
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
