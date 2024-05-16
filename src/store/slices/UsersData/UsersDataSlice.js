@@ -9,49 +9,34 @@ export const userSliceData = createSlice({
   },
   reducers: {
     login(state, { payload }) {
-      return {
-        ...state,
-        currentUser: payload,
-      };
+      state.currentUser = payload;
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(getUsersData.fulfilled, (state, { payload }) => {
-        return {
-          ...state,
-          users: payload,
-        };
+        state.users = payload;
       })
       .addCase(addNewUser.fulfilled, (state, { payload }) => {
-        return {
-          ...state,
-          users: [...state.users, payload],
-        };
+        state.users.push(payload);
       })
       .addCase(getCurrentUser.fulfilled, (state, { payload }) => {
-        return {
-          ...state,
-          currentUser: payload,
-        };
+        state.currentUser = payload;
       })
       .addCase(fetchLoginOut.fulfilled, (state) => {
-        return {
-          ...state,
-          currentUser: {},
-        };
+        state.currentUser = {};
       })
       .addCase(addNewPost.fulfilled, (state, { payload }) => {
-        return {
-          ...state,
-          currentUser: payload,
-        };
+        state.currentUser = payload;
       });
   },
 });
 
+// Selector to get user data from the state
 export const selectUsersData = (state) => state.userData;
 
+// Exporting the login action for dispatch
 export const { login } = userSliceData.actions;
 
+// Exporting the reducer for use in the store
 export const userDataReducer = userSliceData.reducer;
